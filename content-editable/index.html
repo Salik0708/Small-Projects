@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Editable</title>
+  <style>
+    #my-div {
+      width: 300px;
+      height: 100px;
+      font-weight: bold;
+      background-color: #cccccc;
+      padding: 15px;
+
+      caret-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h2>HTML5 'contenteditable' attribute</h2>
+    <div id="my-div" contenteditable="true">Some sample content</div>
+  </div>
+
+  <script>
+    const myDiv = document.getElementById("my-div");
+
+    // Note: contentEditable returns boolean in string
+    // console.log(myDiv.contentEditable); 
+
+    // Note: isContentEditable returns boolean
+    // console.log(myDiv.isContentEditable); 
+
+    // myDiv.contentEditable = false;
+  </script>
+</body>
+</html>
